@@ -3,7 +3,7 @@ const loadFooter = () => {
     footer.classList.add("footer");
     footer.textContent = "Created by Parker Fisher";
 
-    document.getElementById("content").appendChild(footer);
+    document.querySelector("body").appendChild(footer);
 }
 
 export { loadFooter };
