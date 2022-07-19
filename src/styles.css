@@ -37,6 +37,10 @@ h2 {
   gap: 20px;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
