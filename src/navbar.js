@@ -61,9 +61,6 @@ const clearContents = () => {
 
 const setActiveState = (input) => {
     const navButtons = document.querySelectorAll("li");
-    
-    navButtons.forEach(button => console.log(button));
-
     navButtons.forEach(button => button.classList.remove("active"));
 
     navButtons.forEach(button => {
