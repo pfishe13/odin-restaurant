@@ -9,8 +9,14 @@ body {
   align-items: center; */
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
 #content {
+  box-sizing: border-box;
   height: 100%;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,6 +40,37 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.menu-grid {
+  flex-grow: 3;
+  width: 100%;
+  height: calc(100% - 100px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 100px);
+  overflow: scroll;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -45,4 +82,10 @@ body {
 
 .logo-header {
   height: 300px;
+}
+
+.logo-header-small {
+  /* height: 100px; */
+  width: 200px;
+  object-fit: cover;
 }
